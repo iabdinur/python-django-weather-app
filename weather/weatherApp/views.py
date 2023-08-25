@@ -28,3 +28,9 @@ def Home(request):
     else:
         context = {}
     return render(request,'index.html',context)
+
+def about(request) :
+    return render(request,'weather/about.html')
+
+def help(request):
+    return render(request,'weather/help.html')
